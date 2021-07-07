@@ -22,4 +22,11 @@ public class Car extends Vehicle {
 		return hasSteeringWheel;
 	}
 
+	@Override
+	public String toString() {
+		return "Car [hasSteeringWheel=" + hasSteeringWheel + ", getId()=" + getId() + ", getNoOfEngines()="
+				+ getNoOfEngines() + ", getNoOfDoors()=" + getNoOfDoors() + ", getNoOfWheels()=" + getNoOfWheels()
+				+ ", getClass()=" + getClass() + "]";
+	}
+
 }

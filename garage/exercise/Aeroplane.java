@@ -21,4 +21,12 @@ public class Aeroplane extends Vehicle {
 	public boolean getHasWings() {
 		return hasWings;
 	}
+
+	@Override
+	public String toString() {
+		return "Aeroplane [hasWings=" + hasWings + ", getId()=" + getId() + ", getNoOfEngines()=" + getNoOfEngines()
+				+ ", getNoOfDoors()=" + getNoOfDoors() + ", getNoOfWheels()=" + getNoOfWheels() + ", getClass()="
+				+ getClass() + "]";
+	}
+
 }

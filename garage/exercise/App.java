@@ -20,15 +20,24 @@ public class App {
 		System.out.println(g.fixVehicle(g.getListOfVehicles().get(0)));
 		System.out.println(g.fixVehicle(g.getListOfVehicles().get(1)));
 
-		for (Vehicle v : g.getListOfVehicles()) {
-			System.out.println(v.getClass());
-		}
+		// g.removingVehicleType(Motorbike.class);
 
-		g.removingVehicleType(Motorbike.class);
+		// g.removeAllVehicles();
 
-		for (Vehicle v : g.getListOfVehicles()) {
-			System.out.println(v.getClass());
-		}
+		Car car1 = new Car(1, 5, 1, 4, true);
+		g.addVehicle(car1);
+
+		System.out.println(" ");
+
+		Motorbike bike1 = new Motorbike(1, 0, 1, 3, false);
+
+		g.removeVehicles(bike1);
+
+		System.out.println(g.calculateBillForCar(car1));
+
+		g.printVehicles();
+
+		// g.toString();
 
 	}
 }

@@ -22,4 +22,12 @@ public class Motorbike extends Vehicle {
 		this.hasHandleBars = hasHandleBars;
 
 	}
+
+	@Override
+	public String toString() {
+		return "Motorbike [hasHandleBars=" + hasHandleBars + ", getId()=" + getId() + ", getNoOfEngines()="
+				+ getNoOfEngines() + ", getNoOfDoors()=" + getNoOfDoors() + ", getNoOfWheels()=" + getNoOfWheels()
+				+ ", getClass()=" + getClass();
+	}
+
 }
